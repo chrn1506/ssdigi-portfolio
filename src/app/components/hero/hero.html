@@ -1,0 +1,50 @@
+<section id="home" class="hero">
+  <div class="particles">
+    @for (particle of particles(); track $index) {
+      <div class="particle" 
+           [style.left.%]="particle.x" 
+           [style.top.%]="particle.y"
+           [style.width.px]="particle.size"
+           [style.height.px]="particle.size"></div>
+    }
+  </div>
+  
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 class="hero-title">
+        Welcome to <br>
+        <span class="gradient-text">SS DIGI PROMOTIONS</span>
+      </h1>
+      <p class="hero-subtitle">
+        We are pioneers in digital marketing, offering budget-friendly solutions to digitalize your dreams. 
+        Our dedicated and creative team delivers top-quality work without compromise.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn-primary">Book a Demo</button>
+        <button class="btn-secondary">Explore More</button>
+      </div>
+    </div>
+    
+    <div class="hero-image">
+      <div class="floating-card card-1">
+        <div class="icon">📊</div>
+        <h3>30k+</h3>
+        <p>Happy Customers</p>
+      </div>
+      <div class="floating-card card-2">
+        <div class="icon">🎯</div>
+        <h3>800</h3>
+        <p>On Going Projects</p>
+      </div>
+      <div class="floating-card card-3">
+        <div class="icon">⭐</div>
+        <h3>5 Years</h3>
+        <p>of Excellence</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="scroll-indicator">
+    <div class="mouse"></div>
+  </div>
+</section>

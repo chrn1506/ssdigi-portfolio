@@ -1,0 +1,28 @@
+<nav class="navbar" [class.scrolled]="isScrolled()">
+  <div class="container">
+    <div class="logo">
+      <span class="logo-text">SS DIGI</span>
+      <span class="logo-sub">PROMOTIONS</span>
+    </div>
+    
+    <ul class="nav-links" [class.active]="isMobileMenuOpen()">
+      <li><a (click)="scrollToSection('home')">Home</a></li>
+      <li><a (click)="scrollToSection('about')">About us</a></li>
+      <li><a (click)="scrollToSection('services')">Services</a></li>
+      <li><a (click)="scrollToSection('portfolio')">Portfolio</a></li>
+      <li><a (click)="scrollToSection('contact')">Contact us</a></li>
+      <li>
+        <button class="theme-toggle" (click)="themeService.toggleTheme()">
+          {{ themeService.isDark() ? '☀️' : '🌙' }}
+        </button>
+      </li>
+      <li><button class="btn-book" (click)="scrollToSection('booking')">Book Intro Call</button></li>
+    </ul>
+    
+    <div class="hamburger" (click)="toggleMobileMenu()" [class.active]="isMobileMenuOpen()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>

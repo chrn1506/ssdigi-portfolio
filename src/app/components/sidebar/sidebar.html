@@ -1,0 +1,41 @@
+<div class="sidebar-trigger" (click)="toggle()">
+  <div class="trigger-icon"></div>
+  <span>Get in Touch</span>
+</div>
+
+<div class="sidebar-panel" [class.open]="isOpen()">
+  <button class="close-btn" (click)="toggle()">✕</button>
+  
+  <div class="sidebar-content">
+    <h3>Get In Touch</h3>
+    
+    <div class="contact-item">
+      <div class="icon">📞</div>
+      <div class="info">
+        <label>Phone</label>
+        <a href="tel:+918296431933">+91 8296431933</a>
+        <a href="tel:+917569335259">+91 7569335259</a>
+      </div>
+    </div>
+    
+    <div class="contact-item">
+      <div class="icon">✉️</div>
+      <div class="info">
+        <label>Email</label>
+        <a href="mailto:ssdigipromotions@gmail.com">ssdigipromotions&#64;gmail.com</a>
+      </div>
+    </div>
+    
+    <div class="contact-item">
+      <div class="icon">📍</div>
+      <div class="info">
+        <label>Address</label>
+        <p>2-188-3, Flat no 102, Sri Sai Sadan Apartment, Z-Cross, 3rd road, Anantapur, 515001, AP, India</p>
+      </div>
+    </div>
+    
+    <button class="btn-primary" (click)="scrollToContact()">View Full Contact</button>
+  </div>
+</div>
+
+<div class="sidebar-overlay" [class.open]="isOpen()" (click)="toggle()"></div>

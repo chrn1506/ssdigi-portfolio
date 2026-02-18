@@ -1,0 +1,59 @@
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-image">
+        <div class="image-wrapper">
+          <div class="glow-effect"></div>
+          <div class="stats-overlay">
+            @for (stat of stats; track stat.label; let i = $index) {
+              <div class="stat-item animate-on-scroll" [style.animation-delay]="i * 0.2 + 's'">
+                <span class="stat-icon">{{ stat.icon }}</span>
+                <h3>{{ stat.value }}</h3>
+                <p>{{ stat.label }}</p>
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-text animate-on-scroll">
+        <h2 class="section-title">Who We Are</h2>
+        <h3 class="about-subtitle">5 Years Of Working Experience</h3>
+        <p class="about-description">
+          SS Digi Promotions - Start your success journey with us. We are pioneers in digital marketing, 
+          offering budget-friendly solutions to digitalize your dreams. Our dedicated and creative team 
+          delivers top-quality work without compromise.
+        </p>
+        <p class="about-description">
+          With over 5 years of experience in the industry, we've helped thousands of businesses transform 
+          their digital presence and achieve remarkable growth through innovative marketing strategies.
+        </p>
+        <button class="btn-primary">Learn More</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="subscription-benefits">
+  <div class="container">
+    <h2 class="section-title">
+      Why Subscription-Based Digital Marketing Works Better Than Traditional Agencies?
+    </h2>
+
+    <div class="benefits-grid">
+      <article
+        class="benefit-card"
+        *ngFor="let benefit of benefits; let i = index"
+        [style.animationDelay]="i * 0.12 + 's'"
+      >
+        <h3 [style.color]="benefit.color">{{ benefit.title }}</h3>
+        <p class="subtitle" [style.color]="benefit.color">{{ benefit.subtitle }}</p>
+
+        <div *ngIf="benefit.detail" class="detail">
+          <span class="quote-mark">“</span>
+          <p>{{ benefit.detail }}</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+

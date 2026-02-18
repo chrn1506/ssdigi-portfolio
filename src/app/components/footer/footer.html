@@ -1,0 +1,65 @@
+<footer id="contact" class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="logo">
+          <span class="logo-text">SS DIGI</span>
+          <span class="logo-sub">PROMOTIONS</span>
+        </div>
+        <p class="footer-description">
+          We are pioneers in digital marketing, offering budget-friendly solutions to digitalize your dreams. 
+          Our dedicated and creative team delivers top-quality work without compromise.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-icon">📘</a>
+          <a href="#" class="social-icon">📷</a>
+          <a href="#" class="social-icon">🐦</a>
+          <a href="#" class="social-icon">💼</a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          @for (link of quickLinks; track link) {
+            <li><a href="#">{{ link }}</a></li>
+          }
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Services</h3>
+        <ul>
+          @for (service of services; track service) {
+            <li><a href="#">{{ service }}</a></li>
+          }
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul class="contact-info">
+          <li>
+            <span class="icon">📞</span>
+            <div>
+              <a href="tel:+918296431933">+91 8296431933</a><br>
+              <a href="tel:+917569335259">+91 7569335259</a>
+            </div>
+          </li>
+          <li>
+            <span class="icon">✉️</span>
+            <a href="mailto:ssdigipromotions@gmail.com">ssdigipromotions&#64;gmail.com</a>
+          </li>
+          <li>
+            <span class="icon">📍</span>
+            <span>2-188-3, Flat no 102, Sri Sai Sadan Apartment, Z-Cross, 3rd road, Anantapur, 515001, Andhra Pradesh, India</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; {{ currentYear }} SS DIGI PROMOTIONS. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

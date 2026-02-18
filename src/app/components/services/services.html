@@ -1,0 +1,21 @@
+<section id="services" class="services">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-subtitle">
+      Comprehensive digital marketing solutions tailored to your business needs
+    </p>
+    
+    <div class="services-grid">
+      @for (service of services; track service.title) {
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon" [style.background]="service.color">
+            {{ service.icon }}
+          </div>
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
+          <div class="service-hover-effect" [style.background]="service.color"></div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

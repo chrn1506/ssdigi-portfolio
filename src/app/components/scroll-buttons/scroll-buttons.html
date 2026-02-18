@@ -1,0 +1,11 @@
+<div class="scroll-buttons">
+  @if (showScrollTop()) {
+    <button class="scroll-btn scroll-top" (click)="scrollToTop()" title="Scroll to top">
+      ↑
+    </button>
+  }
+  
+  <button class="scroll-btn quick-contact" (click)="scrollToSection('booking')" title="Quick Contact">
+    📧
+  </button>
+</div>

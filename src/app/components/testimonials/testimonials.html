@@ -1,0 +1,41 @@
+<section class="testimonials">
+  <div class="container">
+    <h2 class="section-title">What Our Clients Say</h2>
+    <p class="section-subtitle">
+      Trusted by thousands of satisfied clients worldwide
+    </p>
+    
+    <div class="testimonial-slider">
+      <button class="nav-btn prev" (click)="prev()">‹</button>
+      
+      <div class="testimonial-wrapper">
+        @for (testimonial of testimonials; track testimonial.name; let i = $index) {
+          <div class="testimonial-card" 
+               [class.active]="i === currentIndex()"
+               [class.prev]="i === (currentIndex() - 1 + testimonials.length) % testimonials.length"
+               [class.next]="i === (currentIndex() + 1) % testimonials.length">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">{{ testimonial.text }}</p>
+            <div class="testimonial-author">
+              <div class="author-image">{{ testimonial.image }}</div>
+              <div class="author-info">
+                <h4>{{ testimonial.name }}</h4>
+                <p>{{ testimonial.role }}</p>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+      
+      <button class="nav-btn next" (click)="next()">›</button>
+    </div>
+    
+    <div class="dots">
+      @for (testimonial of testimonials; track testimonial.name; let i = $index) {
+        <span class="dot" 
+              [class.active]="i === currentIndex()"
+              (click)="goTo(i)"></span>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+<section class="features">
+  <div class="container">
+    <h2 class="section-title">Why Choose Us?</h2>
+    <p class="section-subtitle">
+      We deliver exceptional digital marketing solutions with creativity, dedication, and proven results
+    </p>
+    
+    <div class="features-grid">
+      @for (feature of features; track feature.title) {
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon">{{ feature.icon }}</div>
+          <h3>{{ feature.title }}</h3>
+          <p>{{ feature.description }}</p>
+          <div class="feature-glow"></div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
