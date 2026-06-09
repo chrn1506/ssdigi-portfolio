@@ -1,0 +1,25 @@
+<section id="faq" class="faq">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-copy">Everything you need to know about working with us and how SS Digi Promotions makes digital marketing simple.</p>
+    </div>
+
+    <div class="faq-list animate-on-scroll">
+      <div class="faq-item" *ngFor="let faq of faqs; let i = index">
+        <button
+          type="button"
+          class="faq-question"
+          (click)="toggle(i)"
+          [attr.aria-expanded]="isActive(i)">
+          <span>{{ i + 1 }}. {{ faq.question }}</span>
+          <span class="faq-icon">{{ isActive(i) ? '−' : '+' }}</span>
+        </button>
+        <div class="faq-answer" *ngIf="isActive(i)">
+          <p>{{ faq.answer }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

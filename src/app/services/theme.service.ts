@@ -4,7 +4,11 @@ import { Injectable, signal } from '@angular/core';
   providedIn: 'root'
 })
 export class ThemeService {
-  isDark = signal(true);
+  isDark = signal(false);
+
+  constructor() {
+    document.body.classList.add('light-mode');
+  }
 
   toggleTheme() {
     this.isDark.update(v => !v);

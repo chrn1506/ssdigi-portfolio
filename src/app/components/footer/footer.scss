@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  background: var(--bg-secondary);
   padding: 4rem 0 2rem;
   border-top: 1px solid var(--border);
   transition: background 0.3s ease;
@@ -20,22 +20,35 @@
   .footer-section {
     .logo {
       display: flex;
-      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
       margin-bottom: 1rem;
-      
+
+      .logo-image {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 15px 30px rgba(1, 167, 180, 0.18);
+      }
+
+      .logo-copy {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.1;
+      }
+
       .logo-text {
         font-size: 1.5rem;
         font-weight: 800;
-        background: linear-gradient(135deg, #6366f1, #ec4899);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        color: var(--text-primary);
       }
       
       .logo-sub {
         font-size: 0.7rem;
         letter-spacing: 2px;
         color: var(--text-secondary);
+        text-transform: uppercase;
       }
     }
     
@@ -82,7 +95,7 @@
         left: 0;
         width: 40px;
         height: 3px;
-        background: linear-gradient(90deg, var(--primary), var(--accent));
+        background: var(--primary);
         border-radius: 2px;
       }
     }
@@ -125,6 +138,50 @@
               padding-left: 0;
             }
           }
+        }
+      }
+
+      .contact-form {
+        margin-top: 2rem;
+
+        .form-group {
+          margin-bottom: 1rem;
+
+          input,
+          textarea {
+            width: 100%;
+            padding: 1rem 1.25rem;
+            border-radius: 18px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.95rem;
+            transition: border-color 0.25s ease;
+          }
+
+          input:focus,
+          textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+          }
+
+          textarea {
+            resize: vertical;
+          }
+        }
+
+        .btn-primary {
+          width: 100%;
+          padding: 1rem 1.25rem;
+          margin-top: 0.5rem;
+        }
+
+        .form-status {
+          margin-top: 1rem;
+          color: var(--text-secondary);
+          font-size: 0.95rem;
+          min-height: 1.2rem;
         }
       }
     }

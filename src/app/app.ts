@@ -7,6 +7,7 @@ import { AboutComponent } from './components/about/about';
 import { ServicesComponent } from './components/services/services';
 import { TestimonialsComponent } from './components/testimonials/testimonials';
 import { BookingComponent } from './components/booking/booking';
+import { FaqComponent } from './components/faq/faq';
 import { FooterComponent } from './components/footer/footer';
 import { LoaderComponent } from './components/loader/loader';
 import { SidebarComponent } from './components/sidebar/sidebar';
@@ -23,6 +24,7 @@ import { ScrollButtonsComponent } from './components/scroll-buttons/scroll-butto
     ServicesComponent,
     TestimonialsComponent,
     BookingComponent,
+    FaqComponent,
     FooterComponent,
     LoaderComponent,
     SidebarComponent,

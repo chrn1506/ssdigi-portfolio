@@ -13,37 +13,37 @@ export class ServicesComponent {
       title: 'Graphic Design',
       icon: '🎨',
       description: 'Creative and stunning graphic designs that make your brand stand out',
-      color: '#6366f1'
+      color: '#01a7b4'
     },
     {
       title: 'Ads/Advertisement',
       icon: '📢',
       description: 'Strategic advertising campaigns that drive results and engagement',
-      color: '#ec4899'
+      color: '#01a7b4'
     },
     {
       title: 'Model Shoot',
       icon: '📸',
       description: 'Professional model photography for your brand and products',
-      color: '#8b5cf6'
+      color: '#01a7b4'
     },
     {
       title: 'Food Photography',
       icon: '🍔',
       description: 'Mouth-watering food photography that attracts customers',
-      color: '#f59e0b'
+      color: '#01a7b4'
     },
     {
       title: 'VFX',
       icon: '✨',
       description: 'Cutting-edge visual effects for stunning video content',
-      color: '#10b981'
+      color: '#01a7b4'
     },
     {
       title: 'Digital Marketing',
       icon: '📱',
       description: 'Complete digital marketing solutions for business growth',
-      color: '#3b82f6'
+      color: '#01a7b4'
     }
   ];
 }

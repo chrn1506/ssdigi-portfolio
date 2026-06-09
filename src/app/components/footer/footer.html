@@ -3,8 +3,11 @@
     <div class="footer-content">
       <div class="footer-section">
         <div class="logo">
-          <span class="logo-text">SS DIGI</span>
-          <span class="logo-sub">PROMOTIONS</span>
+          <img class="logo-image" src="uiassets/images/logo.png" alt="SS DIGI Logo" />
+          <div class="logo-copy">
+            <span class="logo-text">SS DIGI</span>
+            <span class="logo-sub">PROMOTIONS</span>
+          </div>
         </div>
         <p class="footer-description">
           We are pioneers in digital marketing, offering budget-friendly solutions to digitalize your dreams. 
@@ -48,13 +51,32 @@
           </li>
           <li>
             <span class="icon">✉️</span>
-            <a href="mailto:ssdigipromotions@gmail.com">ssdigipromotions&#64;gmail.com</a>
+            <a href="mailto:chrn1506@gmail.com">chrn1506@gmail.com</a>
           </li>
           <li>
             <span class="icon">📍</span>
             <span>2-188-3, Flat no 102, Sri Sai Sadan Apartment, Z-Cross, 3rd road, Anantapur, 515001, Andhra Pradesh, India</span>
           </li>
         </ul>
+
+        <!-- <form class="contact-form" (ngSubmit)="sendEmail()">
+          <div class="form-group">
+            <input type="text" name="name" [(ngModel)]="form.name" placeholder="Your Name*" required />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" [(ngModel)]="form.email" placeholder="Your Email*" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" name="phone" [(ngModel)]="form.phone" placeholder="Your Phone*" required />
+          </div>
+          <div class="form-group">
+            <textarea name="message" [(ngModel)]="form.message" placeholder="Your Message*" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" [disabled]="isSending()">
+            {{ isSending() ? 'Sending...' : 'Send Message' }}
+          </button>
+          <p class="form-status">{{ sendStatus() }}</p>
+        </form> -->
       </div>
     </div>
     
